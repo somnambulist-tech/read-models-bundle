@@ -1,0 +1,9 @@
+doctrine:
+    dbal:
+        # configure these for your database server
+        default_connection: default
+        connections:
+            default:
+                url: 'sqlite://%kernel.project_dir/var/data.sqlite'
+            users:
+                url: 'sqlite://%kernel.project_dir/var/users.sqlite'

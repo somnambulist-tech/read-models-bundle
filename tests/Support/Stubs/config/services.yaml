@@ -1,0 +1,24 @@
+parameters:
+    locale: 'en'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    app.type_casters.my_service:
+        class: Somnambulist\Components\AttributeModel\TypeCasters\ExternalIdentityCaster
+        arguments:
+            $types:
+                - my_service
+        tags: [ 'somnambulist.read_models.type_caster' ]
+
+    app.type_casters.id:
+        class: Somnambulist\Components\AttributeModel\TypeCasters\SimpleValueObjectCaster
+        arguments:
+            $class: 'Somnambulist\Domain\Entities\Types\Identity\Id'
+            $types:
+                -
+                    uuid_id
+        tags: ['somnambulist.read_models.type_caster']

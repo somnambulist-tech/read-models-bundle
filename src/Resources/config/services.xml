@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults public="false" autowire="true" autoconfigure="true"/>
+
+        <!-- Kernel Subscribers -->
+        <service id="Somnambulist\Components\ReadModels\EventSubscribers\IdentityMapClearerSubscriber" class="Somnambulist\Components\ReadModels\EventSubscribers\IdentityMapClearerSubscriber">
+            <tag name="kernel.subscriber" />
+        </service>
+        <service id="Somnambulist\Components\ReadModels\EventSubscribers\IdentityMapClearerMessengerSubscriber" class="Somnambulist\Components\ReadModels\EventSubscribers\IdentityMapClearerSubscriber">
+            <tag name="kernel.subscriber" />
+        </service>
+
+        <!-- Services -->
+        <service id="Somnambulist\Components\ReadModels\Manager" class="Somnambulist\Components\ReadModels\Manager" public="true" />
+
+        <service id="Somnambulist\Components\ReadModels\TypeCasters\DoctrineTypeCaster" class="Somnambulist\Components\ReadModels\TypeCasters\DoctrineTypeCaster">
+            <tag name="somnambulist.read_models.type_caster" />
+        </service>
+    </services>
+</container>

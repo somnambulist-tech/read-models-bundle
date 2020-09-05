@@ -1,0 +1,3 @@
+somnambulist_read_models:
+    connections:
+        'default': 'doctrine.dbal.default_connection'
