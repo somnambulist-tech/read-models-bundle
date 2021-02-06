@@ -9,7 +9,9 @@ Integrates [read-models](https://github.com/somnambulist-tech/read-models) into 
 Install using composer, or checkout / pull the files from github.com.
 
  * composer require somnambulist/read-models-bundle
- * add the bundle class to `config/bundles.php`
+ * add the bundle class to `config/bundles.php` as the last bundle
+   * __Note:__ if not configured last, then any custom doctrine types may not be assigned to
+     the type caster as the Manager will boot too soon.
  * add a config file (`config/packages/somnambulist.yaml`) with the configuration
  * map any custom casters via the `services.yaml` and tags
  * make some models
