@@ -111,4 +111,4 @@ removed.
 ## Usage
 
 See [read-models](https://github.com/somnambulist-tech/read-models) for detailed docs on usage and
-[attribute-models](https://github.com/somnambulist-tech/read-models) for more on the attribute caster.
+[attribute-models](https://github.com/somnambulist-tech/attribute-model) for more on the attribute caster.
