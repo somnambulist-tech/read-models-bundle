@@ -1,6 +1,10 @@
 # Read-Models Bundle for Symfony
 
-[![GitHub Actions Build Status](https://github.com/somnambulist-tech/read-models-bundle/workflows/tests/badge.svg)](https://github.com/somnambulist-tech/read-models-bundle/actions?query=workflow%3Atests)
+[![GitHub Actions Build Status](https://img.shields.io/github/workflow/status/somnambulist-tech/read-models-bundle/tests?logo=github)](https://github.com/somnambulist-tech/read-models-bundle/actions?query=workflow%3Atests)
+[![Issues](https://img.shields.io/github/issues/somnambulist-tech/read-models-bundle?logo=github)](https://github.com/somnambulist-tech/read-models-bundle/issues)
+[![License](https://img.shields.io/github/license/somnambulist-tech/read-models-bundle?logo=github)](https://github.com/somnambulist-tech/read-models-bundle/blob/master/LICENSE)
+[![PHP Version](https://img.shields.io/packagist/php-v/somnambulist/read-models-bundle?logo=php&logoColor=white)](https://packagist.org/packages/somnambulist/read-models-bundle)
+[![Current Version](https://img.shields.io/packagist/v/somnambulist/read-models-bundle?logo=packagist&logoColor=white)](https://packagist.org/packages/somnambulist/read-models-bundle)
 
 Integrates [read-models](https://github.com/somnambulist-tech/read-models) into Symfony via a bundle.
 
