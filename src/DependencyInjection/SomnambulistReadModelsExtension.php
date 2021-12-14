@@ -22,7 +22,6 @@ use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_it
  */
 class SomnambulistReadModelsExtension extends Extension
 {
-
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

@@ -31,7 +31,7 @@ class BundleTest extends KernelTestCase
     public function testLoading()
     {
         /** @var Manager $manager */
-        $manager = static::$container->get(Manager::class);
+        $manager = static::getContainer()->get(Manager::class);
 
         $this->assertTrue($manager->caster()->has('uuid_id'));
         $this->assertTrue($manager->caster()->has('my_service'));
@@ -55,7 +55,7 @@ class BundleTest extends KernelTestCase
     public function testRegistersEventListeners()
     {
         /** @var EventDispatcher $dispatcher */
-        $dispatcher = static::$container->get(EventDispatcherInterface::class);
+        $dispatcher = static::getContainer()->get(EventDispatcherInterface::class);
 
         $toTest = [];
         foreach ($dispatcher->getListeners(KernelEvents::TERMINATE) as $listeners) {
@@ -72,7 +72,7 @@ class BundleTest extends KernelTestCase
     public function testDoesNotRegisterMessengerListenerWhenMessengerNotInstalled()
     {
         /** @var EventDispatcher $dispatcher */
-        $dispatcher = static::$container->get(EventDispatcherInterface::class);
+        $dispatcher = static::getContainer()->get(EventDispatcherInterface::class);
 
         $toTest = [];
         foreach ($dispatcher->getListeners(WorkerMessageHandledEvent::class) as $listeners) {

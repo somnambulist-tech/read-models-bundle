@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+2021-12-14
+----------
+
+ * update to allow Symfony 6
+ * Symfony 5.3 is now the minimum supported version
+
 2021-01-21
 ----------
 

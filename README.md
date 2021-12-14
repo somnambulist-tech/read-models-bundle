@@ -107,7 +107,7 @@ and `unit_cur` fields, this could be converted to a `Money` object by using the 
 ```
 
 Then the caster can be referenced in the casts as: `'price' => 'product_price'` and the unit_value
-and unit_cur attributes will be removed infavour of the single "price" attribute that will be a
+and unit_cur attributes will be removed in favour of the single "price" attribute that will be a
 Money value object. If the originals should be left in place, set `$remove` to `false`.
 
 Additional casters can be added at any time; and existing casters may be overridden by re-using an
