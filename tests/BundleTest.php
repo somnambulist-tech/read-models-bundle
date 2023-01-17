@@ -17,12 +17,6 @@ use function array_keys;
 use function get_class;
 use function is_object;
 
-/**
- * Class BundleTest
- *
- * @package    Somnambulist\Bundles\ReadModelsBundle\Tests
- * @subpackage Somnambulist\Bundles\ReadModelsBundle\Tests\BundleTest
- */
 class BundleTest extends KernelTestCase
 {
 

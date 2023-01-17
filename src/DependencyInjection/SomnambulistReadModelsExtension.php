@@ -14,12 +14,6 @@ use Symfony\Component\Messenger\MessageBusInterface;
 use function class_exists;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_iterator;
 
-/**
- * Class SomnambulistReadModelsExtension
- *
- * @package    Somnambulist\Bundles\ReadModelsBundle\DependencyInjection
- * @subpackage Somnambulist\Bundles\ReadModelsBundle\DependencyInjection\SomnambulistReadModelsExtension
- */
 class SomnambulistReadModelsExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)

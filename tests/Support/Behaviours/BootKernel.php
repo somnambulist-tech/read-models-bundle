@@ -5,12 +5,6 @@ namespace Somnambulist\Bundles\ReadModelsBundle\Tests\Support\Behaviours;
 use Psr\Container\ContainerInterface;
 use function method_exists;
 
-/**
- * Trait BootKernel
- *
- * @package    Somnambulist\Bundles\ReadModelsBundle\Tests\Support\Behaviours
- * @subpackage Somnambulist\Bundles\ReadModelsBundle\Tests\Support\Behaviours\BootKernel
- */
 trait BootKernel
 {
 

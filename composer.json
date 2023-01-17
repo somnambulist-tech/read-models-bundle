@@ -15,14 +15,14 @@
         "symfony/framework-bundle": "^5.3|^6.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~9.5",
-        "doctrine/doctrine-bundle": "~2.2",
-        "somnambulist/domain": "~4.3",
-        "symfony/dotenv": "^5.4",
-        "symfony/messenger": "^5.4",
-        "symfony/stopwatch": "^5.4",
-        "symfony/var-dumper": "^5.4",
-        "symfony/yaml": "^5.4"
+        "phpunit/phpunit": "^9.5",
+        "doctrine/doctrine-bundle": "^2.7",
+        "somnambulist/domain": "^4.6",
+        "symfony/dotenv": "^6.0",
+        "symfony/messenger": "^6.0",
+        "symfony/stopwatch": "^6.0",
+        "symfony/var-dumper": "^6.0",
+        "symfony/yaml": "^6.0"
     },
     "autoload": {
         "psr-4": {
