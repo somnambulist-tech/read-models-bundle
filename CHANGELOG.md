@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+2023-01-19
+----------
+
+ * require PHP 8.1
+ * require Symfony 6.0+
+ * require read-models 4.0+
+
 2021-12-14
 ----------
 
