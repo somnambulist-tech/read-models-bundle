@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+2024-03-02
+----------
+
+ * require Symfony 6.4+
+ * required doctrine/dbal 4+
+ * add support for Symfony 7
+
 2023-01-19
 ----------
 

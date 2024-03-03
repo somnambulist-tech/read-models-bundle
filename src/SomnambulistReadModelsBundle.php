@@ -7,7 +7,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class SomnambulistReadModelsBundle extends Bundle
 {
-    public function boot()
+    public function boot(): void
     {
         $this->container->get(Manager::class);
     }
